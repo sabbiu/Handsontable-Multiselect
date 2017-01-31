@@ -1,0 +1,102 @@
+{
+  "name": "handsontable",
+  "description": "Spreadsheet-like data grid editor that provides copy/paste functionality compatible with Excel/Google Docs",
+  "homepage": "http://handsontable.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/handsontable/handsontable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/handsontable/handsontable/issues"
+  },
+  "main": "./dist/handsontable.js",
+  "author": "Handsoncode <hello@handsontable.com>",
+  "version": "0.30.1",
+  "keywords": [
+    "data",
+    "grid",
+    "table",
+    "editor",
+    "grid-editor",
+    "data-grid",
+    "data-table",
+    "spreadsheet",
+    "excel",
+    "tabular-data",
+    "edit-cell",
+    "editable-table",
+    "data-spreadsheet"
+  ],
+  "dependencies": {
+    "moment": "^2.13.0",
+    "numbro": "^1.8.0",
+    "pikaday": "^1.4.0",
+    "zeroclipboard": "^2.2.0"
+  },
+  "devDependencies": {
+    "grunt": ">=0.4.0",
+    "grunt-contrib-jasmine": "^1.0.3",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-jscs": "^3.0.1",
+    "hot-builder": "^0.5.2"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/grunt build",
+    "build:dev": "./node_modules/.bin/grunt build-dev",
+    "build:custom": "./node_modules/.bin/grunt build-custom",
+    "test": "./node_modules/.bin/grunt test"
+  },
+  "license": "MIT",
+  "builderDependencies": {
+    "moment": {
+      "include": [
+        "moment.js"
+      ],
+      "copyable": [
+        "moment.js",
+        "locale",
+        "LICENSE"
+      ],
+      "global": "moment"
+    },
+    "numbro": {
+      "include": [
+        "dist/numbro.js"
+      ],
+      "ignore": [
+        "dist/languages.js"
+      ],
+      "copyable": [
+        "dist/numbro.js",
+        "dist/languages.js",
+        "dist/languages",
+        "LICENSE",
+        "LICENSE-Numeraljs"
+      ],
+      "global": "numbro"
+    },
+    "pikaday": {
+      "include": [
+        "pikaday.js",
+        "css/pikaday.css"
+      ],
+      "copyable": [
+        "pikaday.js",
+        "css/pikaday.css",
+        "LICENSE"
+      ],
+      "global": "Pikaday"
+    },
+    "zeroclipboard": {
+      "include": [
+        "dist/ZeroClipboard.js"
+      ],
+      "copyable": [
+        "dist/ZeroClipboard.js",
+        "dist/ZeroClipboard.swf",
+        "LICENSE"
+      ],
+      "global": "ZeroClipboard"
+    }
+  }
+}
